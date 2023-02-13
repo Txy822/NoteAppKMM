@@ -1,8 +1,9 @@
-package com.tes.apps.development.noteappkmm.domain.note
+package com.tes.apps.development.noteappkmm.domain.use_case
 
+import com.tes.apps.development.noteappkmm.domain.note.Note
 import com.tes.apps.development.noteappkmm.domain.time.DateTimeUtil
 
-class SearchNoteUseCase {
+class SearchNotes {
     fun execute(notes: List<Note>, query: String): List<Note> {
         if(query.isBlank()) {
             return notes
