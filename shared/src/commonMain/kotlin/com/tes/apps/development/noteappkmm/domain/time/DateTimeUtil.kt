@@ -23,13 +23,13 @@ object DateTimeUtil {
 
         return buildString {
             append(month)
-            append("")
+            append(" ")
             append(day)
-            append("")
+            append(" ")
             append(year)
-            append("")
+            append(" ")
             append(hour)
-            append("")
+            append(":")
             append(minute)
         }
     }
