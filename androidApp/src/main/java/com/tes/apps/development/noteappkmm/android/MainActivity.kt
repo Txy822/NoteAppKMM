@@ -12,7 +12,6 @@ import com.tes.apps.development.noteappkmm.android.note_detail.NoteDetailScreen
 import com.tes.apps.development.noteappkmm.android.note_list.NoteListScreen
 import dagger.hilt.android.AndroidEntryPoint
 
-
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
