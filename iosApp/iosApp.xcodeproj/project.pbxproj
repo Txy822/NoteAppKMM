@@ -12,6 +12,7 @@
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
 		3A7291F4299E30B100292E79 /* NoteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7291F3299E30B100292E79 /* NoteListViewModel.swift */; };
 		3A7291F7299E313D00292E79 /* NoteListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7291F6299E313D00292E79 /* NoteListScreen.swift */; };
+		3A7291F9299E434400292E79 /* HidableSearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7291F8299E434400292E79 /* HidableSearchTextField.swift */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		2152FB032600AC8F00CF470E /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
 		3A7291F3299E30B100292E79 /* NoteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewModel.swift; sourceTree = "<group>"; };
 		3A7291F6299E313D00292E79 /* NoteListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListScreen.swift; sourceTree = "<group>"; };
+		3A7291F8299E434400292E79 /* HidableSearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HidableSearchTextField.swift; sourceTree = "<group>"; };
 		7555FF7B242A565900829871 /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			children = (
 				3A7291F3299E30B100292E79 /* NoteListViewModel.swift */,
 				3A7291F6299E313D00292E79 /* NoteListScreen.swift */,
+				3A7291F8299E434400292E79 /* HidableSearchTextField.swift */,
 			);
 			path = note_list;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A7291F9299E434400292E79 /* HidableSearchTextField.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				3A7291F7299E313D00292E79 /* NoteListScreen.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
