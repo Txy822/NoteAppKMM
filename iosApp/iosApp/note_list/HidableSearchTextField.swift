@@ -10,15 +10,27 @@ import SwiftUI
 
 struct HidableSearchTextField <Destination: View>:  View {
     
-    var onSearchChange : (String) -> Void
+    var onSearchToggled : () -> Void
     var destinationprovider :() -> Destination
     var isSearchActive :Bool
-    @Binding var searchtext : String
+    @Binding var searchText : String
     
     
     var body: some View {
         HStack {
-            TextField("Search...")
+            TextField("Search...", text: $searchText)
+                .textFieldStyle(.roundedBorder)
+                .opacity(isSearchActive ? 1 : 0)
+            
+            if(!isSearchActive){
+                Spacer()
+            }
+            Button(action: onSearchToggled){
+                Image(systemName: isSearchActive ? "xmark" : "magnifyingglass")
+            }
+            NavigationLink(destination : destinationprovider()){
+                Image(systemName: "plus")
+            }
         }
         
     }
@@ -26,6 +38,11 @@ struct HidableSearchTextField <Destination: View>:  View {
 
 struct HidableSearchTextField_Previews: PreviewProvider {
     static var previews: some View {
-        HidableSearchTextField()
+        HidableSearchTextField(
+            onSearchToggled :{},
+            destinationprovider: {EmptyView()},
+            isSearchActive:true,
+            searchText: .constant("You tube")
+        )
     }
 }
