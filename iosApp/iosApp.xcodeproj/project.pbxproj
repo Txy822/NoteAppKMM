@@ -15,6 +15,8 @@
 		3A7291F9299E434400292E79 /* HidableSearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7291F8299E434400292E79 /* HidableSearchTextField.swift */; };
 		3A7291FB299E6D2A00292E79 /* NoteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7291FA299E6D2A00292E79 /* NoteItem.swift */; };
 		3A7291FD299E74B500292E79 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7291FC299E74B500292E79 /* Colors.swift */; };
+		3A729200299E84B100292E79 /* NoteDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7291FF299E84B100292E79 /* NoteDetailScreen.swift */; };
+		3A729202299E84D600292E79 /* NoteDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A729201299E84D600292E79 /* NoteDetailViewModel.swift */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,8 @@
 		3A7291F8299E434400292E79 /* HidableSearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HidableSearchTextField.swift; sourceTree = "<group>"; };
 		3A7291FA299E6D2A00292E79 /* NoteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteItem.swift; sourceTree = "<group>"; };
 		3A7291FC299E74B500292E79 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		3A7291FF299E84B100292E79 /* NoteDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailScreen.swift; sourceTree = "<group>"; };
+		3A729201299E84D600292E79 /* NoteDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewModel.swift; sourceTree = "<group>"; };
 		7555FF7B242A565900829871 /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,6 +79,15 @@
 			path = note_list;
 			sourceTree = "<group>";
 		};
+		3A7291FE299E848100292E79 /* note_detail */ = {
+			isa = PBXGroup;
+			children = (
+				3A7291FF299E84B100292E79 /* NoteDetailScreen.swift */,
+				3A729201299E84D600292E79 /* NoteDetailViewModel.swift */,
+			);
+			path = note_detail;
+			sourceTree = "<group>";
+		};
 		7555FF72242A565900829871 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +108,7 @@
 		7555FF7D242A565900829871 /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
+				3A7291FE299E848100292E79 /* note_detail */,
 				3A7291F5299E30E100292E79 /* note_list */,
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
 				7555FF82242A565900829871 /* ContentView.swift */,
@@ -207,8 +221,10 @@
 			files = (
 				3A7291FB299E6D2A00292E79 /* NoteItem.swift in Sources */,
 				3A7291F9299E434400292E79 /* HidableSearchTextField.swift in Sources */,
+				3A729200299E84B100292E79 /* NoteDetailScreen.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				3A7291FD299E74B500292E79 /* Colors.swift in Sources */,
+				3A729202299E84D600292E79 /* NoteDetailViewModel.swift in Sources */,
 				3A7291F7299E313D00292E79 /* NoteListScreen.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
 				3A7291F4299E30B100292E79 /* NoteListViewModel.swift in Sources */,
@@ -343,6 +359,7 @@
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)";
 				INFOPLIST_FILE = iosApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -368,6 +385,7 @@
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)";
 				INFOPLIST_FILE = iosApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
