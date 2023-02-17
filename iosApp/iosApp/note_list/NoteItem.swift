@@ -20,9 +20,13 @@ struct NoteItem: View {
                     .font(.title3)
                     .fontWeight(.semibold)
                 Spacer()
-                Button(action: onDeleteClick) {
-                    Image(systemName: "xmark").foregroundColor(.black)
-                }
+                    Menu {
+                        Button("Delete Note", action: onDeleteClick)
+                        Button("Edit Note", action: {})
+
+                    }label: {
+                        Image(systemName: "ellipsis")
+                    }
             }.padding(.bottom, 3)
             
             Text(note.content)
