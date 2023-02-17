@@ -16,8 +16,6 @@ This simple app demostrates how to use kotlin multip-platform to develop apps fo
 
 ## iOS App of swift UI
 
-<img src="img/img_7.png" width="400">
-
 <img src="img/ios/Picture 1.png" width="400">
 <img src="img/ios/Picture 2.png" width="400">
 <img src="img/ios/Picture 3.png" width="400">
